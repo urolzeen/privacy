@@ -6,7 +6,7 @@ name: Hugo
 # events but only for the main branch
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -17,13 +17,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Checkout main
+      - name: Checkout master
         uses: actions/checkout@v2
         with:
           submodules: "recursive"
           fetch-depth: 0
           path: "source"
-          ref: "main"
+          ref: "master"
 
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v2
