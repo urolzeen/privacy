@@ -1,0 +1,12 @@
+title = "隐私政策"
+baseURL = "/"
+languageCode = "zh-CN"
+languageName = "中文简体"
+defaultContentLanguage = "zh"
+hasCJKLanguage = true
+disableHugoGeneratorInject = true
+enableEmoji = true
+enableInlineShortcodes = true
+enableRobotsTXT = true
+relativeURLs = true
+disableKinds = ["RSS"]
